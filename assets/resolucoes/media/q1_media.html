@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questões de Média</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div>
+            <h1>MÉDIA 1/5</h1>
+            <P><strong>(ENEM 2016 2ª APLICAÇÃO)</strong> O gráfico mostra a média de produção diária de petróleo no Brasil, em milhão de barris, no período de 2004 a 2010. Estimativas feitas naquela época indicavam que a média de produção diária de petróleo no Brasil, em 2012, seria 10% superior à média dos três últimos anos apresentados no gráfico.  </P>
+            <img src="tabela1media.jpg" alt="">
+            <p>Se as estimativas tivessem sido confirmadas, a média de produção diária de petróleo no Brasil, em milhão de barris, em 2012, teria sido igual a </p>
+        </div>
+        <div>
+            <input type="radio" id="a1" name="questao1" value="a">
+            <label for="a1">a) 1,940</label><br>
+        </div>
+        <div>
+            <input type="radio" id="b1" name="questao1" value="b">
+            <label for="b1">b) 2,134</label><br>
+        </div>
+        <div>
+            <input type="radio" id="c1" name="questao1" value="c">
+            <label for="c1">c) 2,167</label>
+        </div>
+        <div>
+            <input type="radio" id="d1" name="questao1" value="d">
+            <label for="d1">d) 2,420</label>
+        </div>
+        <div>
+            <input type="radio" id="e1" name="questao1" value="e">
+            <label for="e1">e) 6,402</label>
+        </div>
+
+        <div>
+            <button id="btn1">Responder</button>
+        </div>
+
+        <div>
+            <span id="gabarito1"></span>
+        </div>
+        
+       <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bY4pObGZ00w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="addVideo"></iframe>        </div>
+
+        
+    
+    </div>
+
+    <button id="refresh">Próxima</button>
+
+<script>
+btn1 = document.querySelector("#btn1");
+addVideo = document.getElementById("addVideo");
+refresh = document.getElementById("refresh");
+respostaSubmetida = false;
+btn1.style.visibility = "visible";
+refresh.style.visibility = "hidden";
+addVideo.style.visibility = "hidden";
+
+btn1.addEventListener("click", function(event){
+    event.preventDefault()
+    if (respostaSubmetida) {
+        return;
+      }
+
+
+    let radios = document.getElementsByName("questao1");
+    let gabarito1 = document.getElementById("gabarito1");
+    btn1.style.visibility = "hidden";
+    refresh.style.visibility = "visible";
+    addVideo.style.visibility = "visible";
+    respostaSubmetida = true;
+    
+    for (let i = 0, length = radios.length; i < length; i++) {
+        
+        if (radios[i].checked) {
+            if(radios[i].value == 'b'){
+                gabarito1.textContent = "Gabarito B. Resposta certa"
+                radios[i].parentElement.classList.add("correto")
+                
+            } else{
+                gabarito1.textContent = "Gabarito B. Resposta errada"
+                radios[i].parentElement.classList.add("errado")
+                
+            }
+            
+            break;
+        }
+    }
+    
+    
+})
+
+
+refresh.addEventListener("click", function () {
+    window.location.href="q2_media.html";
+})
+
+</script>
+</body>
+</html>
