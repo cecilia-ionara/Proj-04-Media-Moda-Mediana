@@ -13,6 +13,7 @@
 body {
     font-size: 100%;
     background-color: var(---cor-primaria);
+   padding: 0% 20%;
 }
 
 .cabecalho {
@@ -38,11 +39,12 @@ body {
 
 .conteudo {
     justify-content: space-between;
-    padding: 3% 2%;
+    padding: 0% 15%;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
     border-top: 0.4px solid black;
+    background-color: white;
 }
 
 .conteudo-sobre {
@@ -50,16 +52,18 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    text-align: justify;
+    text-align: center;
 }
 
 .conteudo-titulo {
     font-size: 36px;
+    text-align: center;
 }
 
 .conteudo-paragrafo {
     font-size: 18px;
     line-height: 1.6rem;
+    text-align: justify;
 }
 
 .conteudo-link {
@@ -74,12 +78,18 @@ body {
     font-size: 18px;
     gap: 4px;
     padding: 0 2%;
+    text-align: center;
+}
+
+.conteudo-calculadora {
+    text-align: center;
 }
 
 .link-resolucoes {
     padding: 0.5rem;
     border-radius: 0.5rem;
     background-color: var(---cor-secundaria);
+    text-align: center;
 }
 
 .rodape {
