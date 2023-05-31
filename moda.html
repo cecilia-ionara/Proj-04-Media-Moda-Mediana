@@ -60,6 +60,46 @@
 
       <img class="conteudo-imagem" src="assets/imagens/moda.jpg"></a>
 
+      <h1>Insira os valores:</h1>
+      <label for="array-input">Insira os números separados por vírgulas:</label>
+    <input type="text" id="array-input">
+
+    <button onclick="encontrarMaisRepetido()">Encontrar valor  mais repetido</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function encontrarValorRepetido(array){
+            let contador = {};
+            let valorRepetido;
+            let maxRepeticoes = 0;
+
+            for (let i = 0; i < array.length;  i++){
+                let elemento = array[i];
+
+                if(contador[elemento]){
+                    contador[elemento]++;
+                } else {
+                    contador[elemento] = 1;
+                }
+
+                if (contador[elemento] > maxRepeticoes) {
+                    maxRepeticoes = contador[elemento];
+                    valorRepetido = elemento;
+                }
+            }
+
+            return valorRepetido;
+        }
+         function encontrarMaisRepetido(){
+            let inputArray = document.getElementById('array-input').value;
+            let array = inputArray.split(',').map(Number);
+
+            let valorMaisRepetido = encontrarValorRepetido(array);
+            document.getElementById('resultado').innerHTML = "O valor que mais se repete é:"
+           + valorMaisRepetido;     
+    }
+    </script>
 
       <h1>Agora vamos treinar o que aprendemos</h1>
       <a class="link-resolucoes" href="assets/resolucoes/moda/q1_moda.html">Resolução de questões</a>
