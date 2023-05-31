@@ -1,0 +1,17 @@
+
+
+* {
+    margin: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.certa{
+    border: 2px green solid;
+}
+
+.errada{
+    border: 2px red solid;
+}
+
+
