@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/estilos/style.css">
+    <title>Média</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <nav class="cabecalho-nav">
+            <a class="cabecalho-nav-link" href="index.html">Home</a>
+            <a class="cabecalho-nav-link" href="assets/calculadora/calc.html">Calculadora</a>
+            <a class="cabecalho-nav-link" href="assets/quiz/quiz.html">Quiz</a>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <h1 class="conteudo-titulo">Média</h1>
+
+        <p class="conteudo-paragrafo">A média (Me) é calculada somando-se todos os valores de um conjunto de dados e
+            dividindo-se pelo
+            número de elementos deste conjunto.
+
+            Como a média é uma medida sensível aos valores da amostra, é mais adequada para situações em que os
+            dados são distribuídos mais ou menos de forma uniforme, ou seja, valores sem grandes discrepâncias.
+        </p>
+
+        <h1>Fórmula</h1>
+
+        <img class="conteudo-imagem" src="assets/imagens/média.png"></a>
+
+        <p>Sendo,
+
+            Me: média
+            x1, x2, x3,..., xn: valores dos dados
+            n: número de elementos do conjunto de dados</p>
+
+        <h1>Exemplo</h1>
+
+        <p class="conteudo-paragrafo">Os jogadores de uma equipe de basquete apresentam as seguintes idades: 28, 27,
+            19, 23 e 21
+            anos. Qual a média de idade desta equipe?</p>
+
+        <h1>Solução</h1>
+
+        <img class="conteudo-imagem" src="assets/imagens/solução.png"></a>
+
+        <main class="conteudo">
+
+            <form class="" method="post">
+                <label>Nota 01</label>
+                <input type="number" id="nota01" value="" max="10">
+                <br>
+                <br>
+                <label>Nota 02</label>
+                <input type="number" id="nota02" value="" max="10">
+                <br>
+                <br>
+                <label>Nota 03</label>
+                <input type="number" id="nota03" value="" max="10">
+                <br>
+                <br>
+                <label>Nota 04</label>
+                <input type="number" id="nota04" value="" max="10">
+                <br>
+                <br>
+                <input type="button" onclick="javascript:calculo();" name="name" value="Enviar">
+                <input type="text" id="txtResultado" value="">
+            </form>
+
+            <script type="text/javascript">
+                function calculo() {
+                    var nota01 = parseFloat(document.getElementById('nota01').value);
+                    var nota02 = parseFloat(document.getElementById('nota02').value);
+                    var nota03 = parseFloat(document.getElementById('nota03').value);
+                    var nota04 = parseFloat(document.getElementById('nota04').value);
+
+                    var resultado = parseFloat((nota01 + nota02 + nota03 + nota04) / 4);
+
+                    document.getElementById('txtResultado').setAttribute("value", resultado);
+                }
+            </script>
+
+            <h1>Agora vamos treinar o que aprendemos</h1>
+            <a class="link-resolucoes" href="assets/resolucoes/media/q1_media.html">Resolução de
+                questões</a>
+            <!-- botao para resoluções COLOCAR PADDING PARA PARECER COM BOTÃO-->
+
+
+            <!-- TEXTO EXPLICATVO OK
+                IMAGEM EXEMPLO OK
+                ***** LINK VÍDEOS AULAS COM IMAGEM PRO VÍDEO(pesquisar como faz isso)**** 
+                BOTÃO QUE DIRECIONA ÁS QUESTÕES COM RESOLUÇÃO OK-->
+        </main>
+</body>
+</header>
+
+</html>

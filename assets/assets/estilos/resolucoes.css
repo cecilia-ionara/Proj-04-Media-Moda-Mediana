@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    ---cor-primaria: #8ecae6;
+    ---cor-secundaria: #0077b6;
+}
+
+body {
+    font-size: 100%;
+    background-color: var(---cor-primaria);
+}
+
+.conteudo-questoes {
+    background-color: #fff;
+}
+
+
+.correto{
+    border: 2px green solid;
+}
+
+.errado{
+    border: 2px red solid;
+}
+
+#addVideo{
+     width: 560; height:315;
+}
