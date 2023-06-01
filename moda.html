@@ -17,8 +17,7 @@
       </nav>
    </header>
    <main class="conteudo">
-      <h1 class="conteudo-titulo">Sobre Moda</h1><br></br>
-
+      <h1 class="conteudo-titulo">Sobre Moda</h1>
       <P class="conteudo-paragrafo">A expressão "moda" na matemática refere-se a um conceito estatístico que descreve
          o
          valor ou valores que ocorrem com maior frequência em um conjunto de dados. Em outras palavras, a moda é o
@@ -38,24 +37,24 @@
          É comumente usado em pesquisas de opinião, análise de dados categóricos, seleção de tamanhos de roupas ou
          calçados com base nas preferências populares,
          entre outros campos.
-   </p>
+      </p>
 
       <h1 class="conteudo-titulo">Exemplo1</h1>
       <p class="conteudo-paragrafo">Em uma sapataria durante um dia foram vendidos os seguintes números de sapato:
          34, 39, 36, 35, 37, 40, 36, 38, 36, 38 e 41. Qual o valor da moda desta amostra?</p>
-      <h1 class="conteudo-titulo">Solução</h1><br></br>
+      <h1 class="conteudo-titulo">Solução</h1>
       <p class="conteudo-paragrafo">Observando os números vendidos notamos que o número 36 foi o que apresentou maior
          frequência (3 pares), portanto, a moda é igual a: <br>
          Mo = 36
-      </p><br></br>
-      <h1 class="conteudo-titulo">Exemplo 2</h1><br></br>
+      </p>
+      <h1 class="conteudo-titulo">Exemplo 2</h1>
       <p class="conteudo-paragrafo">Se uma linha de ônibus registra, em quinze ocasiões, os tempos de viagens, em
-         minutos: 52, 50, 55, 53, 61, 52, 52, 59, 55, 54, 53, 52, 50, 51, 60;Qual o valor da moda desta amostra?</p><br></br>
-      <h1 class="conteudo-titulo">Solução</h1><br></br>
+         minutos: 52, 50, 55, 53, 61, 52, 52, 59, 55, 54, 53, 52, 50, 51, 60;Qual o valor da moda desta amostra?</p>
+      <h1 class="conteudo-titulo">Solução</h1>
       <p class="conteudo-paragrafo">Observando os números registrados notamos que o número 52 foi o que apresentou
-         maior frequência (4 pares), portanto, a moda é igual a: <br>
+         maior frequência (4 pares), portanto, a moda é igual a:
          Mo = 52
-      </p><br></br>
+      </p>
 
       <img class="conteudo-imagem" src="assets/imagens/moda.jpg"></a>
 
@@ -69,50 +68,50 @@
 
       <h1 class="conteudo-titulo">Insira os valores:</h1>
       <form class="conteudo-calculadora" method="post">
-      <label for="array-input">Insira os números separados por vírgulas:</label>
-    <input type="text" id="array-input">
+         <label for="array-input">Insira os números separados por vírgulas:</label>
+         <input type="text" id="array-input">
 
-    <button onclick="encontrarMaisRepetido()">Encontrar valor  mais repetido</button>
+         <button onclick="encontrarMaisRepetido()">Encontrar valor mais repetido</button>
 
-    <p id="resultado"></p></form>
+         <p id="resultado"></p>
+      </form>
 
-    <script>
-        function encontrarValorRepetido(array){
+      <script>
+         function encontrarValorRepetido(array) {
             let contador = {};
             let valorRepetido;
             let maxRepeticoes = 0;
 
-            for (let i = 0; i < array.length;  i++){
-                let elemento = array[i];
+            for (let i = 0; i < array.length; i++) {
+               let elemento = array[i];
 
-                if(contador[elemento]){
-                    contador[elemento]++;
-                } else {
-                    contador[elemento] = 1;
-                }
+               if (contador[elemento]) {
+                  contador[elemento]++;
+               } else {
+                  contador[elemento] = 1;
+               }
 
-                if (contador[elemento] > maxRepeticoes) {
-                    maxRepeticoes = contador[elemento];
-                    valorRepetido = elemento;
-                }
+               if (contador[elemento] > maxRepeticoes) {
+                  maxRepeticoes = contador[elemento];
+                  valorRepetido = elemento;
+               }
             }
 
             return valorRepetido;
-        }
-         function encontrarMaisRepetido(){
+         }
+         function encontrarMaisRepetido() {
             let inputArray = document.getElementById('array-input').value;
             let array = inputArray.split(',').map(Number);
 
             let valorMaisRepetido = encontrarValorRepetido(array);
             document.getElementById('resultado').innerHTML = "O valor que mais se repete é:"
-           + valorMaisRepetido;     
-    }
-    </script>
+               + valorMaisRepetido;
+         }
+      </script>
 
-      <h1 class="conteudo-titulo">Agora vamos treinar o que aprendemos</h1><br></br>
+      <h1 class="conteudo-titulo">Agora vamos treinar o que aprendemos</h1>
       <a class="link-resolucoes" href="assets/resolucoes/moda/q1_moda.html">Resolução de questões</a>
 
-      </section>
    </main>
 </body>
 

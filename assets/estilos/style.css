@@ -1,19 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@800&family=Mulish:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 
 :root {
     ---cor-primaria: #8ecae6;
     ---cor-secundaria: #0077b6;
+    ---cor-terciaria: #003566;
+    ---fonte-titulo: 'Geologica', sans-serif;
+    ---fonte-texto: 'Mulish', sans-serif;
 }
 
 body {
     font-size: 100%;
     background-color: var(---cor-primaria);
-   padding: 0% 20%;
+    padding: 0% 20%;
 }
 
 .cabecalho {
@@ -42,40 +47,45 @@ body {
     padding: 0% 15%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
-    border-top: 0.4px solid black;
     background-color: white;
 }
 
 .conteudo-sobre {
-    width: 1400px;
+    width: 800px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5rem;
     text-align: center;
 }
 
 .conteudo-titulo {
-    font-size: 36px;
+    font-family: var(---fonte-titulo);
+    color: var(---cor-terciaria);
+    margin-top: 0.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 
 .conteudo-paragrafo {
-    font-size: 18px;
+    font-family: var(---fonte-texto);
+    color: #000;
+    font-size: 1.2rem;
     line-height: 1.6rem;
     text-align: justify;
 }
 
 .conteudo-link {
+    text-decoration: none;
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    margin-top: 30px;
-
+    gap: 1.5rem;
+    margin-top: 2rem;
 }
 
 .conteudo-link-lista {
-    font-size: 18px;
+    font-family: var(---fonte-titulo);
+    color: var(---cor-secundaria);
+    font-size: 1.2rem;
     gap: 4px;
     padding: 0 2%;
     text-align: center;
@@ -83,6 +93,10 @@ body {
 
 .conteudo-calculadora {
     text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 .link-resolucoes {
@@ -93,7 +107,9 @@ body {
 }
 
 .rodape {
+    font-family: var(---fonte-titulo);
+    color: #000;
+    background-color: var(---cor-secundaria);
     text-align: center;
-    padding: 30px;
-    border-top: 0.4px solid black;
+    padding: 2rem;
 }
