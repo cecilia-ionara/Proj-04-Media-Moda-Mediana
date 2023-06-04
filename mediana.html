@@ -43,7 +43,7 @@
 
             Se a quantidade de dados no ROL é par, a mediana é a média aritmética dos valores centrais.</p>
 
-        <h1 class="conteudo-titulo">Exemplo 1</h1><br></br>
+        <h1 class="conteudo-titulo">Exemplo 1</h1>
 
         <p class="conteudo-paragrafo">Mediana com quantidade ímpar de dados no ROL</p>
 
@@ -58,12 +58,12 @@
 
         <p class="conteudo-paragrafo">Portanto, a mediana do conjunto A é o 12.</p>
 
-        <img class="conteudo-imagem" src="assets/imagens/mediana.png"></a><br></br>
+        <img class="conteudo-imagem" src="assets/imagens/mediana.png"></a>
 
 
-        <h1 class="conteudo-titulo">Exemplo 2</h1><br></br>
+        <h1 class="conteudo-titulo">Exemplo 2</h1>
 
-        <p class="conteudo-paragrafo">Mediana com quantidade PAR de dados no ROL.<br></br>
+        <p class="conteudo-paragrafo">Mediana com quantidade PAR de dados no ROL.</p>
 
         <p class="conteudo-paragrafo">Qual a mediana das alturas dos jogadores de um time de vôlei onde as alturas são:
             2,05m; 1,97m; 1,87m;
@@ -95,13 +95,10 @@
         </form>
 
         <script>function calcularMediana() {
-                // Obter os valores digitados pelo usuário
                 var input = document.getElementById('inputValues').value;
 
-                // Converter a string de valores separados por vírgula em um array
                 var valores = input.split(',').map(Number);
 
-                // Ordenar o array em ordem crescente
                 valores.sort(function (a, b) {
                     return a - b;
                 });
@@ -110,14 +107,11 @@
                 var meio = Math.floor(valores.length / 2);
 
                 if (valores.length % 2 === 0) {
-                    // Se o tamanho do array for par, calcular a média dos dois valores do meio
                     mediana = (valores[meio - 1] + valores[meio]) / 2;
                 } else {
-                    // Se o tamanho do array for ímpar, o valor do meio é a mediana
                     mediana = valores[meio];
                 }
 
-                // Exibir a mediana calculada
                 alert('A mediana é: ' + mediana);
             }</script>
 
@@ -126,7 +120,4 @@
 
     </main>
 </body>
-
-</header>
-
 </html>

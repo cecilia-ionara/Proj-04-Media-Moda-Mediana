@@ -19,7 +19,7 @@
     </header>
 
     <main class="conteudo">
-        <h1 class="conteudo-titulo">Média</h1><br></br>
+        <h1 class="conteudo-titulo">Média</h1>
 
         <p class="conteudo-paragrafo">A média (Me) é calculada somando-se todos os valores de um conjunto de dados e
             dividindo-se pelo
@@ -27,9 +27,9 @@
 
             Como a média é uma medida sensível aos valores da amostra, é mais adequada para situações em que os
             dados são distribuídos mais ou menos de forma uniforme, ou seja, valores sem grandes discrepâncias.
-        </p><br></br>
+        </p>
 
-        <h1 class="conteudo-titulo">Fórmula</h1><br></br>
+        <h1 class="conteudo-titulo">Fórmula</h1>
 
         <img class="conteudo-imagem" src="assets/imagens/média.png"></a>
 
@@ -37,72 +37,61 @@
 
             Me: média
             x1, x2, x3,..., xn: valores dos dados
-            n: número de elementos do conjunto de dados</p><br></br>
+            n: número de elementos do conjunto de dados</p>
 
-        <h1 class="conteudo-titulo">Exemplo</h1><br></br>
+        <h1 class="conteudo-titulo">Exemplo</h1>
 
         <p class="conteudo-paragrafo">Os jogadores de uma equipe de basquete apresentam as seguintes idades: 28, 27,
             19, 23 e 21
-            anos. Qual a média de idade desta equipe?</p><br></br>
+            anos. Qual a média de idade desta equipe?</p>
 
-        <h1 class="conteudo-titulo">Solução</h1><br></br>
+        <h1 class="conteudo-titulo">Solução</h1>
 
         <img class="conteudo-imagem" src="assets/imagens/solução.png"></a>
 
 
-            <form class="conteudo-calculadora" method="post">
-                <label>Nota 01</label>
-                <input type="number" id="nota01" value="" max="10">
-                <br>
-                <br>
-                <label>Nota 02</label>
-                <input type="number" id="nota02" value="" max="10">
-                <br>
-                <br>
-                <label>Nota 03</label>
-                <input type="number" id="nota03" value="" max="10">
-                <br>
-                <br>
-                <label>Nota 04</label>
-                <input type="number" id="nota04" value="" max="10">
-                <br>
-                <br>
-                <input type="button" onclick="javascript:calculo();" name="name" value="Enviar">
-                <input type="text" id="txtResultado" value="">
-            </form><br></br>
+        <form class="conteudo-calculadora" method="post">
+            <label>Nota 01</label>
+            <input type="number" id="nota01" value="" max="10">
 
-            <h1 class="conteudo-titulo">Videoaula</h1><br></br>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/nRxl0WUplf4"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen id="videoaulaMedia"></iframe>
-            </div>
+            <label>Nota 02</label>
+            <input type="number" id="nota02" value="" max="10">
 
-            <script type="text/javascript">
-                function calculo() {
-                    var nota01 = parseFloat(document.getElementById('nota01').value);
-                    var nota02 = parseFloat(document.getElementById('nota02').value);
-                    var nota03 = parseFloat(document.getElementById('nota03').value);
-                    var nota04 = parseFloat(document.getElementById('nota04').value);
+            <label>Nota 03</label>
+            <input type="number" id="nota03" value="" max="10">
 
-                    var resultado = parseFloat((nota01 + nota02 + nota03 + nota04) / 4);
+            <label>Nota 04</label>
+            <input type="number" id="nota04" value="" max="10">
 
-                    document.getElementById('txtResultado').setAttribute("value", resultado);
-                }
-            </script>
+            <input type="button" onclick="javascript:calculo();" name="name" value="Enviar">
+            <input type="text" id="txtResultado" value="">
+        </form>
 
-            <h1 class="conteudo-titulo">Agora vamos treinar o que aprendemos</h1><br></br>
-            <a class="link-resolucoes" href="assets/resolucoes/media/q1_media.html">Resolução de
-                questões</a>
-            <!-- botao para resoluções COLOCAR PADDING PARA PARECER COM BOTÃO-->
+        <h1 class="conteudo-titulo">Videoaula</h1>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nRxl0WUplf4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen id="videoaulaMedia"></iframe>
+        </div>
 
+        <script type="text/javascript">
+            function calculo() {
+                var nota01 = parseFloat(document.getElementById('nota01').value);
+                var nota02 = parseFloat(document.getElementById('nota02').value);
+                var nota03 = parseFloat(document.getElementById('nota03').value);
+                var nota04 = parseFloat(document.getElementById('nota04').value);
 
-            <!-- TEXTO EXPLICATVO OK
-                IMAGEM EXEMPLO OK
-                ***** LINK VÍDEOS AULAS COM IMAGEM PRO VÍDEO(pesquisar como faz isso)**** 
-                BOTÃO QUE DIRECIONA ÁS QUESTÕES COM RESOLUÇÃO OK-->
-        </main>
+                var resultado = parseFloat((nota01 + nota02 + nota03 + nota04) / 4);
+
+                document.getElementById('txtResultado').setAttribute("value", resultado);
+            }
+        </script>
+
+        <h1 class="conteudo-titulo">Agora vamos treinar o que aprendemos</h1><br></br>
+        <a class="link-resolucoes" href="assets/resolucoes/media/q1_media.html">Resolução de
+            questões</a>
+    </main>
 </body>
 </header>
 

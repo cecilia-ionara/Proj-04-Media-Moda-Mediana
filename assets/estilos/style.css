@@ -22,6 +22,7 @@ body {
 }
 
 .cabecalho {
+    font-family: var(---fonte-titulo);
     background-color: var(---cor-secundaria);
     display: flex;
     flex-direction: row;
