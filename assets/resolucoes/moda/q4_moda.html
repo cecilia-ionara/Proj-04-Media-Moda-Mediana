@@ -5,43 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questões de Média</title>
+    <title>Questões de Moda</title>
     <link rel="stylesheet" href="../../estilos/resolucoes.css">
 </head>
 
 <body>
     <main class="conteudo">
         <div>
-            <h1 class="conteudo-titulo">MÉDIA 4/5</h1>
-            <P><strong>(ENEM 2014 2ª APLICAÇÃO)</strong> Após encerrar o período de vendas de 2012, uma concessionária
-                fez um levantamento das vendas de carros novos no último semestre desse ano. Os dados estão expressos no
-                gráfico:</P>
-            <img src="tabela4media.png" alt="">
-            <p>Ao fazer a apresentação dos dados aos funcionários, o gerente estipulou como meta para o mês de janeiro
-                de 2013 um volume de vendas 20% superior à média mensal de vendas do semestre anterior. Para atingir
-                essa meta, a quantidade mínima de carros que deveriam ser vendidos em janeiro</p>
+            <h1 class="conteudo-titulo">MODA 4/5</h1>
+            <p class="conteudo-paragrafo"><strong class="conteudo-titulo">(UPE 2021)</strong> Em uma pequena cidade
+                chamada Estatística, havia uma loja de roupas que
+                sempre buscava atender às preferências dos clientes. O proprietário decidiu analisar a demanda por
+                camisetas de diferentes tamanhos. Ele registrou as seguintes quantidades de camisetas vendidas em um
+                mês:</p>
+            <p class="conteudo-paragrafo">36, 42, 28, 36, 42, 36, 30, 42, 36, 28, 28, 36, 30, 42, 30</p>
+            <p class="conteudo-paragrafo">Qual é o tamanho da camiseta que mais vendeu nesse mês em Estatística?</p>
+            <p class="conteudo-paragrafo">Qual a moda das variações do número de vendas diárias no período considerado?</p>
         </div>
+        
         <div class="conteudo-comando-alternativa">
             <input type="radio" id="a4" name="questao4" value="a">
-            <label for="a4">a) 20</label><br>
+            <label for="a4">a) 36</label><br>
         </div>
         <div class="conteudo-comando-alternativa">
             <input type="radio" id="b4" name="questao4" value="b">
-            <label for="b4">b) 21</label><br>
+            <label for="b4">b) 42
+            </label><br>
         </div>
         <div class="conteudo-comando-alternativa">
             <input type="radio" id="c4" name="questao4" value="c">
-            <label for="c4">c) 17</label>
+            <label for="c4">c) 28</label>
         </div>
         <div class="conteudo-comando-alternativa">
             <input type="radio" id="d4" name="questao4" value="d">
-            <label for="d4">d) 24</label>
+            <label for="d4">d) 30</label>
         </div>
         <div class="conteudo-comando-alternativa">
             <input type="radio" id="e4" name="questao4" value="e">
-            <label for="e4">e) 30</label>
+            <label for="e4">e) 44</label>
         </div>
-
         <div>
             <button id="btn4">Responder</button>
         </div>
@@ -51,11 +53,12 @@
         </div>
 
         <div>
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/TalEeHU3IJo"
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/h8a99hxuiJU"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen id="addVideo4"></iframe>
+                allowfullscreen id="addVideo3"></iframe>
+        </div>
+
         </div>
 
         <button id="refresh">Próxima</button>
@@ -63,8 +66,9 @@
         <script>
             btn4 = document.querySelector("#btn4");
             addVideo4 = document.getElementById("addVideo4");
-            refresh = document.getElementById("refresh");
+            refresh = document.querySelector("#refresh");
             respostaSubmetida = false;
+            btn4.style.visibility = "visible";
             refresh.style.visibility = "hidden";
             addVideo4.style.visibility = "hidden";
 
@@ -73,7 +77,6 @@
                 if (respostaSubmetida) {
                     return;
                 }
-
 
                 let radios = document.getElementsByName("questao4");
                 let gabarito4 = document.getElementById("gabarito4");
@@ -85,26 +88,23 @@
                 for (let i = 0, length = radios.length; i < length; i++) {
 
                     if (radios[i].checked) {
-                        if (radios[i].value == 'd') {
-                            gabarito4.textContent = "Gabarito D. Resposta certa"
+                        if (radios[i].value == 'a') {
+                            gabarito4.textContent = "Gabarito A. Resposta certa"
                             radios[i].parentElement.classList.add("correto")
 
                         } else {
-                            gabarito4.textContent = "Gabarito D. Resposta errada"
+                            gabarito4.textContent = "Gabarito A. Resposta errada"
                             radios[i].parentElement.classList.add("errado")
-
                         }
 
                         break;
                     }
                 }
-
-
             })
 
 
             refresh.addEventListener("click", function () {
-                window.location.href = "q5_media.html";
+                window.location.href = "q5_moda.html";
             })
 
         </script>
