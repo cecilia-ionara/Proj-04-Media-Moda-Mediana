@@ -85,20 +85,14 @@ body {
 
 .conteudo-link-lista {
     font-family: var(---fonte-titulo);
-    color: var(---cor-terciaria);
-    text-align: center;
+    color: var(---cor-secundaria);
+    font-size: 1.2rem;
     gap: 4px;
     padding: 0 2%;
-    font-size: 1.6rem;
-}
-
-a {
-    text-decoration: none;
+    text-align: center;
 }
 
 .conteudo-imagem {
-    display: center;
-    justify-content: center;
     align-items: center;
 }
 
@@ -106,7 +100,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 40vh;
+  }
+
+a {
+    text-decoration: none;
 }
 
 .link-resolucoes {
@@ -118,8 +116,8 @@ a {
 
 .rodape {
     font-family: var(---fonte-titulo);
-    background-color: var(---cor-secundaria);
     color: #000;
+    background-color: var(---cor-secundaria);
     text-align: center;
     padding: 2rem;
 }

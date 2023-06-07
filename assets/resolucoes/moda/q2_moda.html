@@ -10,48 +10,44 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho-nav">
-            <a class="cabecalho-nav-link" href="../../index.html">Home</a>
-            <a class="cabecalho-nav-link" href="../../quiz/quiz.html">Quiz</a>
-        </nav>
-    </header>
     <main class="conteudo">
-        <section class="conteudo-comando-total" name="questões">
+        <div>
             <h1 class="conteudo-titulo">MODA 2/5</h1>
-            <p class="conteudo-paragrafo"><strong class="conteudo-titulo">(ENEM 2015 2ª APLICAÇÃO) </strong> Uma pessoa, ao fazer uma pesquisa
-                com alguns alunos de um
+            <p class="conteudo-titulo"><strong>(ENEM 2015 2ª APLICAÇÃO) </strong> Uma pessoa, ao fazer uma pesquisa com alguns alunos de um
                 curso, coletou as idades dos entrevistados e organizou esses dados em um gráfico.</p>
             <img src="tabela2.png" alt="tabela 2">
-            <p class="conteudo-paragrafo">Qual a moda das idades, em anos, dos entrevistados?</p>
-            <div class="conteudo-comando-alternativa">
-                <input type="radio" id="a2" name="questao2" value="a">
-                <label for="a2">a) 9</label>
-            </div>
-            <div class="conteudo-comando-alternativa">
-                <input type="radio" id="b2" name="questao2" value="b">
-                <label for="b2">b) 15
-                </label>
-            </div>
-            <div class="conteudo-comando-alternativa">
-                <input type="radio" id="c2" name="questao2" value="c">
-                <label for="c2">c) 13</label>
-            </div>
-            <div class="conteudo-comando-alternativa">
-                <input type="radio" id="d2" name="questao2" value="d">
-                <label for="d2">d) 21</label>
-            </div>
-            <div class="conteudo-comando-alternativa">
-                <input type="radio" id="e2" name="questao2" value="e">
-                <label for="e2">e) 12</label>
-            </div>
+            <p class="conteudo-titulo">Qual a moda das idades, em anos, dos entrevistados?</p>
+        </div>
+        <div class="conteudo-comando-alternativa">
+            <input type="radio" id="a2" name="questao2" value="a">
+            <label for="a2">a) 9</label><br>
+        </div>
+        <div class="conteudo-comando-alternativa">
+            <input type="radio" id="b2" name="questao2" value="b">
+            <label for="b2">b) 15
+            </label><br>
+        </div>
+        <div class="conteudo-comando-alternativa">
+            <input type="radio" id="c2" name="questao2" value="c">
+            <label for="c2">c) 13</label>
+        </div>
+        <div class="conteudo-comando-alternativa">
+            <input type="radio" id="d2" name="questao2" value="d">
+            <label for="d2">d) 21</label>
+        </div>
+        <div class="conteudo-comando-alternativa">
+            <input type="radio" id="e2" name="questao2" value="e">
+            <label for="e2">e) 12</label>
+        </div>
 
-            <button class="conteudo-botao" id="btn2">Responder</button>
+        <div>
+            <button id="btn2">Responder</button>
+        </div>
 
-            <div>
-                <span id="gabarito2"></span>
-            </div>
-        </section>
+        <div>
+            <span id="gabarito2"></span>
+        </div>
+
         <div>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/oW8Rua9M2tE"
                 title="YouTube video player" frameborder="0"
@@ -59,7 +55,11 @@
                 allowfullscreen id="addVideo2"></iframe>
         </div>
 
-        <button class="conteudo-botao" id="refresh">Próxima</button>
+
+
+        </div>
+
+        <button id="refresh">Próxima</button>
 
         <script>
             btn2 = document.querySelector("#btn2");
@@ -75,6 +75,7 @@
                 if (respostaSubmetida) {
                     return;
                 }
+
 
                 let radios = document.getElementsByName("questao2");
                 let gabarito2 = document.getElementById("gabarito2");
@@ -98,7 +99,10 @@
                         break;
                     }
                 }
+
+
             })
+
 
             refresh.addEventListener("click", function () {
                 window.location.href = "q3_moda.html";

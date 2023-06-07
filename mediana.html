@@ -58,7 +58,7 @@
 
         <p class="conteudo-paragrafo">Portanto, a mediana do conjunto A é o 12.</p>
 
-        <img class="conteudo-imagem" src="assets/imagens/mediana.png">
+        <img class="conteudo-imagem" src="assets/imagens/mediana.png" width="120px" height="60px">
 
 
         <h1 class="conteudo-titulo">Exemplo 2</h1>
@@ -75,7 +75,7 @@
         <p class="conteudo-paragrafo">Verificamos que a quantidade de dados é PAR. A mediana é a média aritmética dos
             valores centrais.</p>
 
-        <img class="conteudo-imagem" src="assets/imagens/mediana2.png"></a>
+        <img class="conteudo-imagem" src="assets/imagens/mediana2.png"  width="320px" height="110px"></a>
 
         <p class="conteudo-paragrafo">Portanto, a mediana das alturas dos jogadores é 1,98m.</p>
 
@@ -90,8 +90,9 @@
         <h1 class="conteudo-titulo">Calculo da mediana</h1>
 
         <form class="conteudo-calculadora" method="post">
-            <input type="text" id="inputValues" placeholder="Digite os valores separados por vírgula">
-            <button onclick="calcularMediana()">Calcular Mediana</button>
+            <label for="array-input" class="conteudo-paragrafo">Insira os números separados por vírgula:</label>
+            <div><input type="text" id="inputValues"></div>
+            <div><button onclick="calcularMediana()">Calcular Mediana</button></div>
         </form>
 
         <script>function calcularMediana() {
