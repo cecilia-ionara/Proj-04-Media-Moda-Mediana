@@ -21,22 +21,26 @@
     <main class="conteudo">
         <h1 class="conteudo-titulo">Média</h1>
 
-        <p class="conteudo-paragrafo">A média (Me) é uma medida estatística importante que representa o valor médio de um conjunto de números.
-            
-            Ela é calculada somando todos os valores e dividindo pelo número total de elementos. 
+        <p class="conteudo-paragrafo">A média (Me) é uma medida estatística importante que representa o valor médio de
+            um conjunto de números.
 
-            A média aritmética é frequentemente usada para resumir um conjunto de dados e fornecer uma ideia geral de seu valor central.
-            
-            Para calcular a média aritmética de um conjunto de números, você deve somar todos os valores e dividir pelo número total de elementos. Por exemplo, se tivermos os seguintes números: 5, 7, 10, 12 e 15, a média aritmética seria calculada da seguinte forma:
+            Ela é calculada somando todos os valores e dividindo pelo número total de elementos.
 
-           <br> (5 + 7 + 10 + 12 + 15) / 5 = 49 / 5 = 9,8
-           <br>
+            A média aritmética é frequentemente usada para resumir um conjunto de dados e fornecer uma ideia geral de
+            seu valor central.
+
+            Para calcular a média aritmética de um conjunto de números, você deve somar todos os valores e dividir pelo
+            número total de elementos. Por exemplo, se tivermos os seguintes números: 5, 7, 10, 12 e 15, a média
+            aritmética seria calculada da seguinte forma:
+
+            <br> (5 + 7 + 10 + 12 + 15) / 5 = 49 / 5 = 9,8
+            <br>
             Portanto, a média aritmética dos números fornecidos é 9,8.
         </p>
 
         <h1 class="conteudo-titulo">Fórmula</h1>
 
-        <img class="conteudo-imagem" src="assets/imagens/média.png" width="300px" height="100px"></a>
+        <img class="conteudo-imagem" src="assets/imagens/media2.png" width="350px" height="200px">
 
         <p class="conteudo-paragrafo">Sendo,
 
@@ -52,27 +56,30 @@
 
         <h1 class="conteudo-titulo">Solução</h1>
 
-        <img class="conteudo-imagem" src="assets/imagens/media2.png" width="350px" height="200px"></a>
+        <img class="conteudo-imagem" src="assets/imagens/media2.png"></a>
+        <section class="conteudo-calculadora">
+            <form class="conteudo-calculadora-form" method="post">
+                <label for="array-input" class="conteudo-paragrafo">Insira as notas de cada bimestre:</label>
+                <div><label class="conteudo-paragrafo">Nota 02</label>
+                    <input type="number" id="nota02" value="" max="10">
+                </div>
+                <div>
+                    <label class="conteudo-paragrafo">Nota 02</label>
+                    <input type="number" id="nota02" value="" max="10">
+                </div>
+                <div>
+                    <label class="conteudo-paragrafo">Nota 03</label>
+                    <input type="number" id="nota03" value="" max="10">
+                </div>
+                <div>
+                    <label class="conteudo-paragrafo">Nota 04</label>
+                    <input type="number" id="nota04" value="" max="10">
+                </div>
+                <input class="conteudo-botao" type="button" onclick="javascript:calculo();" name="name" value="Enviar">
+                <input type="text" id="txtResultado" value="">
+            </form>
+        </section>
 
-<section class="conteudo-calculadora">
-        <form class="conteudo-calculadora-form" method="post">
-            <label for="array-input" class="conteudo-paragrafo">Insira as notas de cada Bimestre:</label>
-            <div><label class="conteudo-paragrafo">Nota 01</label>
-            <input type="number" id="nota01" value="" max="10"></div>
-
-           <div><label  class="conteudo-paragrafo">Nota 02</label>
-            <input type="number" id="nota02" value="" max="10"></div>
-
-            <div><label  class="conteudo-paragrafo">Nota 03</label>
-            <input type="number" id="nota03" value="" max="10"></div>
-
-            <div><label  class="conteudo-paagrafo">Nota 04</label>
-            <input type="number" id="nota04" value="" max="10"></div>
-
-            <input type="button" onclick="javascript:calculo();" name="name" value="Enviar">
-            <input type="text" id="txtResultado" value="">
-        </form>
-</section>
         <h1 class="conteudo-titulo">Videoaula</h1>
         <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/nRxl0WUplf4"
@@ -94,7 +101,7 @@
             }
         </script>
 
-        <h1 class="conteudo-titulo">Agora vamos treinar o que aprendemos</h1><br></br>
+        <h1 class="conteudo-titulo">Agora vamos treinar o que aprendemos</h1>
         <a class="link-resolucoes" href="assets/resolucoes/media/q1_media.html">Resolução de
             questões</a>
     </main>
