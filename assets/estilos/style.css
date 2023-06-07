@@ -85,14 +85,20 @@ body {
 
 .conteudo-link-lista {
     font-family: var(---fonte-titulo);
-    color: var(---cor-secundaria);
-    font-size: 1.2rem;
+    color: var(---cor-terciaria);
+    text-align: center;
     gap: 4px;
     padding: 0 2%;
-    text-align: center;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 .conteudo-imagem {
+    display: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -101,10 +107,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 50vh;
-  }
-
-a {
-    text-decoration: none;
 }
 
 .link-resolucoes {
@@ -116,8 +118,8 @@ a {
 
 .rodape {
     font-family: var(---fonte-titulo);
-    color: #000;
     background-color: var(---cor-secundaria);
+    color: #000;
     text-align: center;
     padding: 2rem;
 }
