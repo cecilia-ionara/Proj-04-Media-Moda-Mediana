@@ -98,3 +98,30 @@ a {
 .conteudo-comando-total {
     padding: 5% 0 5%;
 }
+
+.conteudo-botao {
+    font-family: var(---fonte-titulo);
+    background-color: var(---cor-terciaria);
+    color: var(---cor-primaria);
+    text-decoration: none;
+
+    cursor: pointer;
+    overflow: hidden;
+
+    border: transparent;
+    border-radius: 10%;
+    padding: 0.8rem;
+    margin: 2rem 2rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.correto {
+    border: 0.5rem green solid;
+    border-radius: 5%;
+}
+
+.errado {
+    border: 0.5rem red solid;
+    border-radius: 5%;
+}
