@@ -56,20 +56,20 @@
          Mo = 52
       </p>
 
-      <img class="conteudo-imagem-verde" src="assets/imagens/moda.png"></a>
+      <img class="conteudo-imagem" src="assets/imagens/moda.png" width="400px" height="240px">
 
       <h1 class="conteudo-titulo">Videoaula</h1>
       <div class="video-container">
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/p1BTB4dR1QI" title="YouTube video player"
-            frameborder="0"
+         <iframe src="https://www.youtube.com/embed/p1BTB4dR1QI" title="YouTube video player" frameborder="0"
+            width="560" height="315"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen id="videoaulaModa"></iframe>
       </div>
 
       <h1 class="conteudo-titulo">Calculadora da Moda</h1>
       <form class="conteudo-calculadora" method="post">
-         <p>Para calcular a moda instira os números separados por vírgulas</p>
-         <label for="array-input">Insira os números:</label>
+         <p class="conteudo-paragrafo">Para calcular a moda instira os números separados por vírgulas</p>
+         <label for="array-input" class="conteudo-paragrafo">Insira os números:</label>
          <input type="text" id="array-input">
 
          <button onclick="encontrarMaisRepetido()">Encontrar valor mais repetido</button>

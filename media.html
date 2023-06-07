@@ -36,7 +36,7 @@
 
         <h1 class="conteudo-titulo">Fórmula</h1>
 
-        <img class="conteudo-imagem" src="assets/imagens/média.png"></a>
+        <img class="conteudo-imagem" src="assets/imagens/média.png" width="300px" height="100px"></a>
 
         <p class="conteudo-paragrafo">Sendo,
 
@@ -52,26 +52,27 @@
 
         <h1 class="conteudo-titulo">Solução</h1>
 
-        <img class="conteudo-imagem" src="assets/imagens/media2.png"></a>
+        <img class="conteudo-imagem" src="assets/imagens/media2.png" width="350px" height="200px"></a>
 
+<section class="conteudo-calculadora">
+        <form class="conteudo-calculadora-form" method="post">
+            <label for="array-input" class="conteudo-paragrafo">Insira as notas de cada Bimestre:</label>
+            <div><label class="conteudo-paragrafo">Nota 01</label>
+            <input type="number" id="nota01" value="" max="10"></div>
 
-        <form class="conteudo-calculadora" method="post">
-            <label>Nota 01</label>
-            <input type="number" id="nota01" value="" max="10">
+           <div><label  class="conteudo-paragrafo">Nota 02</label>
+            <input type="number" id="nota02" value="" max="10"></div>
 
-            <label>Nota 02</label>
-            <input type="number" id="nota02" value="" max="10">
+            <div><label  class="conteudo-paragrafo">Nota 03</label>
+            <input type="number" id="nota03" value="" max="10"></div>
 
-            <label>Nota 03</label>
-            <input type="number" id="nota03" value="" max="10">
-
-            <label>Nota 04</label>
-            <input type="number" id="nota04" value="" max="10">
+            <div><label  class="conteudo-paragrafo">Nota 04</label>
+            <input type="number" id="nota04" value="" max="10"></div>
 
             <input type="button" onclick="javascript:calculo();" name="name" value="Enviar">
             <input type="text" id="txtResultado" value="">
         </form>
-
+</section>
         <h1 class="conteudo-titulo">Videoaula</h1>
         <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/nRxl0WUplf4"
