@@ -67,12 +67,36 @@ body {
     text-align: center;
 }
 
+h2 {
+    font-family: var(---fonte-texto);
+    color: var(---cor-terciaria);
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+
+h3 {
+    font-family: var(---fonte-texto);
+    color: var(---cor-secundaria);
+    text-align: center;
+    font-size: 1.8rem;
+}
+
 .conteudo-paragrafo {
     font-family: var(---fonte-texto);
     color: #000;
     font-size: 1.2rem;
     line-height: 1.6rem;
     text-align: justify;
+    padding: 10px 0px;
+}
+
+.formula {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.4rem;
+    padding: 15px 50px;
+    text-align: center;
 }
 
 .conteudo-link {

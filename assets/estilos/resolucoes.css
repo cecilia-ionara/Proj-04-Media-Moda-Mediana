@@ -99,6 +99,12 @@ a {
     padding: 5% 0 5%;
 }
 
+.conteudo-imagem {
+    display: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .conteudo-botao {
     font-family: var(---fonte-titulo);
     background-color: var(---cor-terciaria);
