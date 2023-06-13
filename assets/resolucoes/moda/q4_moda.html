@@ -12,14 +12,14 @@
 <body>
     <header class="cabecalho">
         <nav class="cabecalho-nav">
-            <a class="cabecalho-nav-link" href="../../index.html">Home</a>
+            <a class="cabecalho-nav-link" href="../../../index.html">Home</a>
             <a class="cabecalho-nav-link" href="../../quiz/quiz.html">Quiz</a>
         </nav>
     </header>
     <main class="conteudo">
         <section class="conteudo-comando-total" name="questões">
             <h1 class="conteudo-titulo">MODA 4/5</h1>
-            <p class="conteudo-paragrafo"><strong class="conteudo-titulo">(UPE 2021)</strong> Em uma pequena cidade
+            <p class="conteudo-paragrafo"><strong class="conteudo-titulo">(AUTO)</strong> Em uma pequena cidade
                 chamada Estatística, havia uma loja de roupas que
                 sempre buscava atender às preferências dos clientes. O proprietário decidiu analisar a demanda por
                 camisetas de diferentes tamanhos. Ele registrou as seguintes quantidades de camisetas vendidas em um
@@ -56,12 +56,7 @@
                 <span id="gabarito4"></span>
             </div>
         </section>
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/h8a99hxuiJU"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen id="addVideo3"></iframe>
-        </div>
+        
 
         <button class="conteudo-botao" id="refresh">Próxima</button>
 
@@ -72,7 +67,6 @@
             respostaSubmetida = false;
             btn4.style.visibility = "visible";
             refresh.style.visibility = "hidden";
-            addVideo4.style.visibility = "hidden";
 
             btn4.addEventListener("click", function (event) {
                 event.preventDefault()
@@ -84,7 +78,6 @@
                 let gabarito4 = document.getElementById("gabarito4");
                 btn4.style.visibility = "hidden";
                 refresh.style.visibility = "visible";
-                addVideo4.style.visibility = "visible";
                 respostaSubmetida = true;
 
                 for (let i = 0, length = radios.length; i < length; i++) {

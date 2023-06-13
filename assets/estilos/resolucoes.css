@@ -105,6 +105,13 @@ a {
     align-items: center;
 }
 
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
 .conteudo-botao {
     font-family: var(---fonte-titulo);
     background-color: var(---cor-terciaria);
