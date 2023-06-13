@@ -17,11 +17,11 @@ botaoQuestao1.addEventListener("click", function(event){
             questao1Marcada = true;
             if(radios1[i].value == 'd'){
                 gabarito1.textContent = "Gabarito D. Resposta certa"
-                radios1[i].parentElement.classList.add("certa")
+                radios1[i].parentElement.classList.add("correto")
                 pontuacao++
             }else{
                 gabarito1.textContent = "Gabarito D. Resposta errada"
-                radios1[i].parentElement.classList.add("errada")
+                radios1[i].parentElement.classList.add("errado")
             }
             
             break;
@@ -37,11 +37,11 @@ botaoQuestao1.addEventListener("click", function(event){
             questao2Marcada = true;
             if(radios2[i].value == 'b'){
                 gabarito2.textContent = "Gabarito B. Resposta certa"
-                radios2[i].parentElement.classList.add("certa")
+                radios2[i].parentElement.classList.add("correto")
                 pontuacao++
             }else{
                 gabarito2.textContent = "Gabarito B. Resposta errada"
-                radios2[i].parentElement.classList.add("errada")
+                radios2[i].parentElement.classList.add("errado")
             }
             
            break;
@@ -57,11 +57,11 @@ botaoQuestao1.addEventListener("click", function(event){
             questao3Marcada = true;
             if(radios3[i].value == 'd'){
                 gabarito3.textContent = "Gabarito D. Resposta certa"
-                radios3[i].parentElement.classList.add("certa")
+                radios3[i].parentElement.classList.add("correto")
                 pontuacao++
             }else{
                 gabarito3.textContent = "Gabarito D. Resposta errada"
-                radios3[i].parentElement.classList.add("errada")
+                radios3[i].parentElement.classList.add("errado")
             }
             
            break;
@@ -77,11 +77,11 @@ botaoQuestao1.addEventListener("click", function(event){
             questao4Marcada = true;
             if(radios4[i].value == 'b'){
                 gabarito4.textContent = "Gabarito B. Resposta certa"
-                radios4[i].parentElement.classList.add("certa")
+                radios4[i].parentElement.classList.add("correto")
                 pontuacao++
             }else{
                 gabarito4.textContent = "Gabarito B. Resposta errada"
-                radios4[i].parentElement.classList.add("errada")
+                radios4[i].parentElement.classList.add("errado")
             }
             
            break;
@@ -97,11 +97,11 @@ botaoQuestao1.addEventListener("click", function(event){
             questao5Marcada = true;
             if(radios5[i].value == 'd'){
                 gabarito5.textContent = "Gabarito D. Resposta certa"
-                radios5[i].parentElement.classList.add("certa")
+                radios5[i].parentElement.classList.add("correto")
                 pontuacao++
             }else{
                 gabarito5.textContent = "Gabarito D. Resposta errada"
-                radios5[i].parentElement.classList.add("errada")
+                radios5[i].parentElement.classList.add("errado")
             }
             
            break;
@@ -117,11 +117,11 @@ botaoQuestao1.addEventListener("click", function(event){
             questao6Marcada = true;
             if(radios6[i].value == 'c'){
                 gabarito6.textContent = "Gabarito C. Resposta certa"
-                radios6[i].parentElement.classList.add("certa")
+                radios6[i].parentElement.classList.add("correto")
                 pontuacao++
             }else{
                 gabarito6.textContent = "Gabarito C. Resposta errada"
-                radios6[i].parentElement.classList.add("errada")
+                radios6[i].parentElement.classList.add("errado")
             }
             
            break;
@@ -136,11 +136,11 @@ botaoQuestao1.addEventListener("click", function(event){
             questao7Marcada = true;
             if(radios7[i].value == 'e'){
                 gabarito7.textContent = "Gabarito E. Resposta certa"
-                radios7[i].parentElement.classList.add("certa")
+                radios7[i].parentElement.classList.add("correto")
                 pontuacao++
             }else{
                 gabarito7.textContent = "Gabarito E. Resposta errada"
-                radios7[i].parentElement.classList.add("errada")
+                radios7[i].parentElement.classList.add("errado")
             }
             
            break;
@@ -155,11 +155,11 @@ botaoQuestao1.addEventListener("click", function(event){
             questao8Marcada = true;
             if(radios8[i].value == 'e'){
                 gabarito8.textContent = "Gabarito E. Resposta certa"
-                radios8[i].parentElement.classList.add("certa")
+                radios8[i].parentElement.classList.add("correto")
                 pontuacao++
             }else{
                 gabarito8.textContent = "Gabarito E. Resposta errada"
-                radios8[i].parentElement.classList.add("errada")
+                radios8[i].parentElement.classList.add("errado")
             }
             
            break;
@@ -174,11 +174,11 @@ botaoQuestao1.addEventListener("click", function(event){
             questao9Marcada = true;
             if(radios9[i].value == 'e'){
                 gabarito9.textContent = "Gabarito E. Resposta certa"
-                radios9[i].parentElement.classList.add("certa")
+                radios9[i].parentElement.classList.add("correto")
                 pontuacao++
             }else{
                 gabarito9.textContent = "Gabarito E. Resposta errada"
-                radios9[i].parentElement.classList.add("errada")
+                radios9[i].parentElement.classList.add("errado")
             }
             
            break;
@@ -193,11 +193,11 @@ botaoQuestao1.addEventListener("click", function(event){
             questao10Marcada = true;
             if(radios10[i].value == 'e'){
                 gabarito10.textContent = "Gabarito E. Resposta certa"
-                radios10[i].parentElement.classList.add("certa")
+                radios10[i].parentElement.classList.add("correto")
                 pontuacao++
             }else{
                 gabarito10.textContent = "Gabarito E. Resposta errada"
-                radios10[i].parentElement.classList.add("errada")
+                radios10[i].parentElement.classList.add("errado")
             }
             
            break;
@@ -210,65 +210,65 @@ botaoQuestao1.addEventListener("click", function(event){
         botaoQuestao1.style.visibility="visible";
         refresh.style.visibility = "hidden";
         for (let i = 0, length = radios1.length; i < length; i++) {
-            radios1[i].parentElement.classList.remove("certa");
-            radios1[i].parentElement.classList.remove("errada");
+            radios1[i].parentElement.classList.remove("correto");
+            radios1[i].parentElement.classList.remove("errado");
             gabarito1.textContent = ""
             
         }
 
        for (let i = 0, length = radios2.length; i < length; i++) {
-            radios2[i].parentElement.classList.remove("certa");
-            radios2[i].parentElement.classList.remove("errada");
+            radios2[i].parentElement.classList.remove("correto");
+            radios2[i].parentElement.classList.remove("errado");
             gabarito2.textContent = ""
          
         }
 
         for (let i = 0, length = radios3.length; i < length; i++) {
-            radios3[i].parentElement.classList.remove("certa");
-            radios3[i].parentElement.classList.remove("errada");
+            radios3[i].parentElement.classList.remove("correto");
+            radios3[i].parentElement.classList.remove("errado");
             gabarito3.textContent = ""
               
         }
 
         for (let i = 0, length = radios4.length; i < length; i++) {
-            radios4[i].parentElement.classList.remove("certa");
-            radios4[i].parentElement.classList.remove("errada");
+            radios4[i].parentElement.classList.remove("correto");
+            radios4[i].parentElement.classList.remove("errado");
             gabarito4.textContent = ""
         }
 
         for (let i = 0, length = radios5.length; i < length; i++) {
-            radios5[i].parentElement.classList.remove("certa");
-            radios5[i].parentElement.classList.remove("errada");
+            radios5[i].parentElement.classList.remove("correto");
+            radios5[i].parentElement.classList.remove("errado");
             gabarito5.textContent = ""
         }
 
         for (let i = 0, length = radios6.length; i < length; i++) {
-            radios6[i].parentElement.classList.remove("certa");
-            radios6[i].parentElement.classList.remove("errada");
+            radios6[i].parentElement.classList.remove("correto");
+            radios6[i].parentElement.classList.remove("errado");
             gabarito6.textContent = ""
         }
 
         for (let i = 0, length = radios7.length; i < length; i++) {
-            radios7[i].parentElement.classList.remove("certa");
-            radios7[i].parentElement.classList.remove("errada");
+            radios7[i].parentElement.classList.remove("correto");
+            radios7[i].parentElement.classList.remove("errado");
             gabarito7.textContent = ""
         }
 
         for (let i = 0, length = radios8.length; i < length; i++) {
-            radios8[i].parentElement.classList.remove("certa");
-            radios8[i].parentElement.classList.remove("errada");
+            radios8[i].parentElement.classList.remove("correto");
+            radios8[i].parentElement.classList.remove("errado");
             gabarito8.textContent = ""
         }
 
         for (let i = 0, length = radios9.length; i < length; i++) {
-            radios9[i].parentElement.classList.remove("certa");
-            radios9[i].parentElement.classList.remove("errada");
+            radios9[i].parentElement.classList.remove("correto");
+            radios9[i].parentElement.classList.remove("errado");
             gabarito9.textContent = ""
         }
 
         for (let i = 0, length = radios10.length; i < length; i++) {
-            radios10[i].parentElement.classList.remove("certa");
-            radios10[i].parentElement.classList.remove("errada");
+            radios10[i].parentElement.classList.remove("correto");
+            radios10[i].parentElement.classList.remove("errado");
             gabarito10.textContent = ""
         }
 
