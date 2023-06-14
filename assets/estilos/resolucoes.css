@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@800&family=Mulish:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    ---cor-primaria: #8ecae6;
+    ---cor-secundaria: #0077b6;
+    ---cor-terciaria: #003566;
+    ---fonte-titulo: 'Geologica', sans-serif;
+    ---fonte-texto: 'Mulish', sans-serif;
+}
+
+body {
+    font-size: 100%;
+    background-color: var(---cor-primaria);
+    padding: 0% 20%;
+}
+
+.cabecalho {
+    font-family: var(---fonte-titulo);
+    background-color: var(---cor-secundaria);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem;
+}
+
+.cabecalho-nav {
+    display: flex;
+    gap: 4rem;
+}
+
+.cabecalho-nav-link {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.conteudo {
+    justify-content: space-between;
+    padding: 0% 15%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.conteudo-sobre {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.conteudo-titulo {
+    font-family: var(---fonte-titulo);
+    color: var(---cor-terciaria);
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.conteudo-paragrafo {
+    font-family: var(---fonte-texto);
+    color: #000;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 0.5rem;
+    text-align: justify;
+}
+
+.conteudo-comando-questao {
+    border-color: transparent;
+    padding-bottom: 5%
+}
+
+.conteudo-comando-alternativa {
+    font-family: var(---fonte-texto);
+    color: #000;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    padding: 0.5rem;
+    text-align: justify;
+}
+
+.conteudo-comando-total {
+    padding: 5% 0 5%;
+}
+
+.conteudo-imagem {
+    display: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.conteudo-botao {
+    font-family: var(---fonte-titulo);
+    background-color: var(---cor-terciaria);
+    color: var(---cor-primaria);
+    text-decoration: none;
+
+    cursor: pointer;
+    overflow: hidden;
+
+    border: transparent;
+    border-radius: 0.625rem;
+    padding: 0.8rem;
+    margin: 2rem 2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    align-items: center;
+}
+
+.correto {
+    background-color: rgb(79, 184, 79);
+    border-radius: 0.625rem;
+}
+
+.errado {
+    background-color: rgb(220, 90, 90);
+    border-radius: 0.625rem;
+}
+
+.video{
+    align-items: center;
+}
