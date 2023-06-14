@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 :root {
@@ -38,8 +39,8 @@ body {
 
 .cabecalho-nav-link {
     font-weight: 600;
-    font-size: 24px;
-    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -84,7 +85,6 @@ h3 {
     font-size: 1.8rem;
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
 
 .conteudo-paragrafo {
@@ -104,46 +104,42 @@ h3 {
     text-align: center;
 }
 
-.conteudo-link {
+.conteudo-botao {
+    font-family: var(---fonte-titulo);
+    background-color: var(---cor-terciaria);
+    color: var(---cor-primaria);
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin-top: 2rem;
+
+    cursor: pointer;
+    overflow: hidden;
+
+    border: transparent;
+    border-radius: 0.625rem;
+    padding: 0.8rem;
+    margin: 2rem 2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    align-items: center;
 }
 
 .conteudo-link-lista {
     font-family: var(---fonte-titulo);
-    color: var(---cor-terciaria);
     text-align: center;
     gap: 4px;
     padding: 0 2%;
     font-size: 1.6rem;
     margin-bottom: 20px;
-    
 }
 
-
-.conteudo-link-lista-link{
-    text-decoration: none;
-    
-}
-
-a {
-    text-decoration: none;
+.conteudo-link-lista-link {
+    color: var(---cor-terciaria);
 }
 
 .conteudo-imagem {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .conteudo-botao {
-    display: block;
-    margin-left:  auto;
-    margin-right: auto;
-  }
+}
 
 .video-container {
     display: flex;
@@ -163,13 +159,11 @@ a {
     font-family: var(---fonte-titulo);
     background-color: var(---cor-terciaria);
     color: #fff;
-    text-decoration: none;
 
-    border-radius: 10%;
+    border-radius: 0.2rem;
     padding: 0.8rem;
-    margin: 2rem 2rem;
     font-size: 1.4rem;
-    text-align: center;
+    align-items: center;
 }
 
 .rodape {

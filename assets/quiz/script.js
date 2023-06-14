@@ -2,12 +2,12 @@ botaoQuestao1 = document.querySelector("#btn")
 refresh = document.querySelector("#refresh")
 refresh.style.visibility = "hidden";
 
-botaoQuestao1.addEventListener("click", function(event){
+botaoQuestao1.addEventListener("click", function (event) {
     event.preventDefault()
-    botaoQuestao1.style.visibility="hidden";
+    botaoQuestao1.style.visibility = "hidden";
     refresh.style.visibility = "visible";
     pontuacao = 0;
-    
+
     let radios1 = document.getElementsByName("questao1")
     let gabarito1 = document.getElementById("gabarito1")
     questao1Marcada = false;
@@ -15,36 +15,32 @@ botaoQuestao1.addEventListener("click", function(event){
     for (let i = 0, length = radios1.length; i < length; i++) {
         if (radios1[i].checked) {
             questao1Marcada = true;
-            if(radios1[i].value == 'd'){
-                gabarito1.textContent = "Gabarito D. Resposta certa"
+            if (radios1[i].value == 'd') {
                 radios1[i].parentElement.classList.add("correto")
                 pontuacao++
-            }else{
-                gabarito1.textContent = "Gabarito D. Resposta errada"
+            } else {
                 radios1[i].parentElement.classList.add("errado")
             }
-            
+
             break;
         }
     }
 
-    
+
     let radios2 = document.getElementsByName("questao2")
     let gabarito2 = document.getElementById("gabarito2")
     questao2Marcada = false;
     for (let i = 0, length = radios2.length; i < length; i++) {
         if (radios2[i].checked) {
             questao2Marcada = true;
-            if(radios2[i].value == 'b'){
-                gabarito2.textContent = "Gabarito B. Resposta certa"
+            if (radios2[i].value == 'b') {
                 radios2[i].parentElement.classList.add("correto")
                 pontuacao++
-            }else{
-                gabarito2.textContent = "Gabarito B. Resposta errada"
+            } else {
                 radios2[i].parentElement.classList.add("errado")
             }
-            
-           break;
+
+            break;
         }
     }
 
@@ -55,16 +51,14 @@ botaoQuestao1.addEventListener("click", function(event){
     for (let i = 0, length = radios3.length; i < length; i++) {
         if (radios3[i].checked) {
             questao3Marcada = true;
-            if(radios3[i].value == 'd'){
-                gabarito3.textContent = "Gabarito D. Resposta certa"
+            if (radios3[i].value == 'd') {
                 radios3[i].parentElement.classList.add("correto")
                 pontuacao++
-            }else{
-                gabarito3.textContent = "Gabarito D. Resposta errada"
+            } else {
                 radios3[i].parentElement.classList.add("errado")
             }
-            
-           break;
+
+            break;
         }
     }
 
@@ -75,16 +69,14 @@ botaoQuestao1.addEventListener("click", function(event){
     for (let i = 0, length = radios4.length; i < length; i++) {
         if (radios4[i].checked) {
             questao4Marcada = true;
-            if(radios4[i].value == 'b'){
-                gabarito4.textContent = "Gabarito B. Resposta certa"
+            if (radios4[i].value == 'b') {
                 radios4[i].parentElement.classList.add("correto")
                 pontuacao++
-            }else{
-                gabarito4.textContent = "Gabarito B. Resposta errada"
+            } else {
                 radios4[i].parentElement.classList.add("errado")
             }
-            
-           break;
+
+            break;
         }
     }
 
@@ -95,16 +87,14 @@ botaoQuestao1.addEventListener("click", function(event){
     for (let i = 0, length = radios5.length; i < length; i++) {
         if (radios5[i].checked) {
             questao5Marcada = true;
-            if(radios5[i].value == 'd'){
-                gabarito5.textContent = "Gabarito D. Resposta certa"
+            if (radios5[i].value == 'd') {
                 radios5[i].parentElement.classList.add("correto")
                 pontuacao++
-            }else{
-                gabarito5.textContent = "Gabarito D. Resposta errada"
+            } else {
                 radios5[i].parentElement.classList.add("errado")
             }
-            
-           break;
+
+            break;
         }
     }
 
@@ -115,16 +105,14 @@ botaoQuestao1.addEventListener("click", function(event){
     for (let i = 0, length = radios6.length; i < length; i++) {
         if (radios6[i].checked) {
             questao6Marcada = true;
-            if(radios6[i].value == 'c'){
-                gabarito6.textContent = "Gabarito C. Resposta certa"
+            if (radios6[i].value == 'c') {
                 radios6[i].parentElement.classList.add("correto")
                 pontuacao++
-            }else{
-                gabarito6.textContent = "Gabarito C. Resposta errada"
+            } else {
                 radios6[i].parentElement.classList.add("errado")
             }
-            
-           break;
+
+            break;
         }
     }
 
@@ -134,16 +122,14 @@ botaoQuestao1.addEventListener("click", function(event){
     for (let i = 0, length = radios7.length; i < length; i++) {
         if (radios7[i].checked) {
             questao7Marcada = true;
-            if(radios7[i].value == 'e'){
-                gabarito7.textContent = "Gabarito E. Resposta certa"
+            if (radios7[i].value == 'e') {
                 radios7[i].parentElement.classList.add("correto")
                 pontuacao++
-            }else{
-                gabarito7.textContent = "Gabarito E. Resposta errada"
+            } else {
                 radios7[i].parentElement.classList.add("errado")
             }
-            
-           break;
+
+            break;
         }
     }
 
@@ -153,16 +139,14 @@ botaoQuestao1.addEventListener("click", function(event){
     for (let i = 0, length = radios8.length; i < length; i++) {
         if (radios8[i].checked) {
             questao8Marcada = true;
-            if(radios8[i].value == 'e'){
-                gabarito8.textContent = "Gabarito E. Resposta certa"
+            if (radios8[i].value == 'e') {
                 radios8[i].parentElement.classList.add("correto")
                 pontuacao++
-            }else{
-                gabarito8.textContent = "Gabarito E. Resposta errada"
+            } else {
                 radios8[i].parentElement.classList.add("errado")
             }
-            
-           break;
+
+            break;
         }
     }
 
@@ -172,16 +156,14 @@ botaoQuestao1.addEventListener("click", function(event){
     for (let i = 0, length = radios9.length; i < length; i++) {
         if (radios9[i].checked) {
             questao9Marcada = true;
-            if(radios9[i].value == 'e'){
-                gabarito9.textContent = "Gabarito E. Resposta certa"
+            if (radios9[i].value == 'e') {
                 radios9[i].parentElement.classList.add("correto")
                 pontuacao++
-            }else{
-                gabarito9.textContent = "Gabarito E. Resposta errada"
+            } else {
                 radios9[i].parentElement.classList.add("errado")
             }
-            
-           break;
+
+            break;
         }
     }
 
@@ -191,43 +173,41 @@ botaoQuestao1.addEventListener("click", function(event){
     for (let i = 0, length = radios10.length; i < length; i++) {
         if (radios10[i].checked) {
             questao10Marcada = true;
-            if(radios10[i].value == 'e'){
-                gabarito10.textContent = "Gabarito E. Resposta certa"
+            if (radios10[i].value == 'e') {
                 radios10[i].parentElement.classList.add("correto")
                 pontuacao++
-            }else{
-                gabarito10.textContent = "Gabarito E. Resposta errada"
+            } else {
                 radios10[i].parentElement.classList.add("errado")
             }
-            
-           break;
+
+            break;
         }
     }
 
     if (!questao1Marcada || !questao2Marcada || !questao3Marcada || !questao4Marcada || !questao5Marcada || !questao6Marcada || !questao7Marcada || !questao8Marcada || !questao9Marcada || !questao10Marcada) {
         alert("Responda todas as questões antes de verificar as respostas!");
-        mensagem.textContent="";
-        botaoQuestao1.style.visibility="visible";
+        mensagem.textContent = "";
+        botaoQuestao1.style.visibility = "visible";
         refresh.style.visibility = "hidden";
         for (let i = 0, length = radios1.length; i < length; i++) {
             radios1[i].parentElement.classList.remove("correto");
             radios1[i].parentElement.classList.remove("errado");
             gabarito1.textContent = ""
-            
+
         }
 
-       for (let i = 0, length = radios2.length; i < length; i++) {
+        for (let i = 0, length = radios2.length; i < length; i++) {
             radios2[i].parentElement.classList.remove("correto");
             radios2[i].parentElement.classList.remove("errado");
             gabarito2.textContent = ""
-         
+
         }
 
         for (let i = 0, length = radios3.length; i < length; i++) {
             radios3[i].parentElement.classList.remove("correto");
             radios3[i].parentElement.classList.remove("errado");
             gabarito3.textContent = ""
-              
+
         }
 
         for (let i = 0, length = radios4.length; i < length; i++) {
@@ -272,12 +252,12 @@ botaoQuestao1.addEventListener("click", function(event){
             gabarito10.textContent = ""
         }
 
-    } else{
-        mensagem=document.getElementById('mensagem');
-        mensagem.textContent=`pontuação: ${pontuacao}/10`;  
+    } else {
+        mensagem = document.getElementById('mensagem');
+        mensagem.innerHTML = `<h1 class="conteudo-titulo">Sua pontuação é: ${pontuacao}/10</h1>`;
     }
 
-   
+
 })
 
 refresh.addEventListener("click", function () {

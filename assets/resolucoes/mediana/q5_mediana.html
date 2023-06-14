@@ -92,11 +92,9 @@
 
                     if (radios[i].checked) {
                         if (radios[i].value == 'e') {
-                            gabarito5.textContent = "Gabarito E. Resposta certa"
                             radios[i].parentElement.classList.add("correto")
 
                         } else {
-                            gabarito5.textContent = "Gabarito E. Resposta errada"
                             radios[i].parentElement.classList.add("errado")
                         }
                         break;
