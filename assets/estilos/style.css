@@ -129,6 +129,7 @@ h3 {
     padding: 0 2%;
     font-size: 1.6rem;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .conteudo-link-lista-link {
@@ -145,6 +146,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
     height: 50vh;
 }
 
